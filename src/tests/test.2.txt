@@ -1,0 +1,11 @@
+INPUT 3 A B C
+OUTPUT 1 Q
+NAND A C temp1
+NAND temp1 1 temp2
+NAND temp2 temp2 temp3
+NAND B 1 temp4
+NAND C 1 temp5
+NAND temp4 temp5 temp6
+NAND temp6 1 temp7
+NAND temp7 temp7 temp8
+NAND temp3 temp8 Q

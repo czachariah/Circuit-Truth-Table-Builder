@@ -1,0 +1,109 @@
+INPUT 5 X2 X1 Y2 Y1 Cin
+OUTPUT 3 Cout Z2 Z1
+AND X2 Y2 temp1
+AND Y2 Y1 temp3
+AND temp3 Cin temp4
+AND X1 Y2 temp5
+AND temp5 Cin temp6
+AND X1 Y2 temp7
+AND temp7 Y1 temp8
+AND X2 Y1 temp9
+AND temp9 Cin temp10
+AND X2 X1 temp11
+AND temp11 Cin temp12
+AND X2 X1 temp13
+AND temp13 Y1 temp14
+OR temp1 temp4 temp15
+OR temp15 temp6 temp16
+OR temp16 temp8 temp17
+OR temp17 temp10 temp18
+OR temp18 temp12 temp19
+OR temp19 temp14 Cout
+NOT X2 temp20
+NOT Y2 temp21
+AND temp20 temp21 temp22
+AND temp22 Y1 temp23
+AND temp23 Cin temp24
+NOT X2 temp25
+NOT X1 temp26
+AND temp25 temp26 temp27
+AND temp27 Y2 temp28
+NOT Y1 temp29
+AND temp28 temp29 temp30
+NOT X2 temp31
+NOT X1 temp32
+AND temp31 temp32 temp33
+AND temp33 Y2 temp34
+NOT Cin temp35
+AND temp34 temp35 temp36
+NOT X2 temp37
+AND temp37 Y2 temp38
+NOT Y1 temp39
+AND temp38 temp39 temp40
+NOT Cin temp41
+AND temp40 temp41 temp42
+NOT X2 temp43
+AND temp43 X1 temp44
+NOT Y2 temp45
+AND temp44 temp45 temp46
+AND temp46 Cin temp47
+NOT X2 temp48
+AND temp48 X1 temp49
+NOT Y2 temp50
+AND temp49 temp50 temp51
+AND temp51 Y1 temp52
+NOT X1 temp53
+AND X2 temp53 temp54
+NOT Y2 temp55
+AND temp54 temp55 temp56
+NOT Y1 temp57
+AND temp56 temp57 temp58
+NOT X1 temp59
+AND X2 temp59 temp60
+NOT Y2 temp61
+AND temp60 temp61 temp62
+NOT Cin temp63
+AND temp62 temp63 temp64
+NOT Y2 temp65
+AND X2 temp65 temp66
+NOT Y1 temp67
+AND temp66 temp67 temp68
+NOT Cin temp69
+AND temp68 temp69 temp70
+AND X2 Y2 temp71
+AND temp71 Y1 temp72
+AND temp72 Cin temp73
+AND X2 X1 temp74
+AND temp74 Y2 temp75
+AND temp75 Cin temp76
+AND X2 X1 temp77
+AND temp77 Y2 temp78
+AND temp78 Y1 temp79
+OR temp24 temp30 temp80
+OR temp80 temp36 temp81
+OR temp81 temp42 temp82
+OR temp82 temp47 temp83
+OR temp83 temp52 temp84
+OR temp84 temp58 temp85
+OR temp85 temp64 temp86
+OR temp86 temp70 temp87
+OR temp87 temp73 temp88
+OR temp88 temp76 temp89
+OR temp89 temp79 Z2
+NOT X1 temp90
+NOT Y1 temp91
+AND temp90 temp91 temp92
+AND temp92 Cin temp93
+NOT X1 temp94
+AND temp94 Y1 temp95
+NOT Cin temp96
+AND temp95 temp96 temp97
+NOT Y1 temp98
+AND X1 temp98 temp99
+NOT Cin temp100
+AND temp99 temp100 temp101
+AND X1 Y1 temp102
+AND temp102 Cin temp103
+OR temp93 temp97 temp104
+OR temp104 temp101 temp105
+OR temp105 temp103 Z1

@@ -1,0 +1,7 @@
+INPUT 3 A B C
+OUTPUT 1 Q
+AND A C temp1
+NOT B temp2
+NOT C temp3
+AND temp2 temp3 temp4
+OR temp1 temp4 Q

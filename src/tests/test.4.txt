@@ -1,0 +1,10 @@
+INPUT 2 I2 I1
+OUTPUT 4 O0 O1 O2 O3
+NOT I2 temp1
+NOT I1 temp2
+AND temp1 temp2 O0
+NOT I2 temp3
+AND temp3 I1 O1
+NOT I1 temp4
+AND I2 temp4 O2
+AND I2 I1 O3
